@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <h1>TEST</h1>
+<h1>TEST</h1>
+<!-- 添加这行强制更新 -->
+<p>更新时间: <span id="timestamp"></span></p>
+
+<script>
+// 添加时间戳确保每次部署都是新内容
+document.getElementById('timestamp').textContent = new Date().toLocaleString();
+</script>
 </body>
 </html>
